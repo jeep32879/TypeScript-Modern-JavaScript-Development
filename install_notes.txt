@@ -1,0 +1,32 @@
+on Windows 10 install PowerShell-7.0.1-win-x64
+after node.js install (node-v12.17.0-x64.msi)
+to avoid "npm WARN npm npm does not support Node.js v12.17.0"
+npm install -g npm@latest
+
+To print a package version on the registry (latest version available)
+npm view typescript version
+
+To check npm installed packages (-g for global)
+npm list -g --depth=0
+
+    PS C:\Users\jeep>  npm list -g --depth=0
+    C:\Users\jeep\AppData\Roaming\npm
+    +-- @angular/cli@1.7.2
+    +-- babel-register@6.26.0
+    +-- bower@1.8.4
+    +-- gulp@4.0.0
+    +-- gulp-cli@2.0.1
+    +-- npm@6.14.5
+    +-- npm-check-updates@2.14.2
+    +-- npm-install-peers@1.2.1
+    +-- semver@5.5.0
+    +-- tsd@0.6.5
+    `-- typescript@2.7.2
+
+npm list -g | Select-String "typescript"
+
+update typescript
+npm install -g typescript@latest
+
+J'ai aussi installé P4merge (64 bits) voir aussi "git_bash_global_aliases.txt"
+
